@@ -179,6 +179,13 @@ ul li {
 .font-lite-black {
   color: #999; }
 
+.intro .information li {
+  display: block;
+  margin: 5px 0; }
+
+/*-----------------------------------
+SOCIAL ICONS
+-----------------------------------*/
 .intro .social-icons > li > a {
   height: 35px;
   line-height: 35px;
@@ -208,6 +215,9 @@ ul li {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
+/*-----------------------------------
+FOOTER
+-----------------------------------*/
 footer {
   width: 100%;
   background-color: #343A40;

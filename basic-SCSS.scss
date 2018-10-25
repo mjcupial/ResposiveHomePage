@@ -172,18 +172,6 @@ INTRO SECTION
 
 
 
-
-
-
-
-
-
-
-nav {
-
-
-}
-
 .intro {
   padding: 0 20px;
   margin-top: 100px;
@@ -225,6 +213,19 @@ ul {
   color: #999;
 }
 
+//.intro .information > li{ display: block; margin: 5px 0;}
+.intro{
+  .information{
+    li{
+      display: block;
+      margin: 5px 0;
+    }
+  }
+}
+
+/*-----------------------------------
+SOCIAL ICONS
+-----------------------------------*/
 .intro .social-icons > li > a {
   height: 35px;
   line-height: 35px;
@@ -263,7 +264,9 @@ ul {
 
 
 
-// ---- footer ----
+/*-----------------------------------
+FOOTER
+-----------------------------------*/
 
 footer {
   width: 100%;
