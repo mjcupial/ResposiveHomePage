@@ -108,8 +108,7 @@ a:hover,
 button:active,
 button:focus,
 button:hover {
-  text-decoration: none;
-  color: #FFA804; }
+  text-decoration: none; }
 
 b {
   font-weight: 600; }
@@ -231,7 +230,13 @@ EDUCATION
     position: relative; }
     .education-wrapper .education button {
       margin-top: 20px;
-      color: white; }
+      color: white;
+      background-color: #887392;
+      border: none; }
+    .education-wrapper .education button:hover {
+      background-color: #FFAB00; }
+    .education-wrapper .education button:focus {
+      box-shadow: 0 0 0 0.2rem; }
   .education-wrapper .education:after {
     content: '';
     position: absolute;

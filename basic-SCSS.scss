@@ -127,7 +127,7 @@ button:active,
 button:focus,
 button:hover {
   text-decoration: none;
-  color: $orange-color;
+  //color: $orange-color;
 }
 
 b {
@@ -277,6 +277,14 @@ EDUCATION
     button{
       margin-top: 20px;
       color: white;
+      background-color: #887392;
+      border: none;
+    }
+    button:hover{
+      background-color: #FFAB00;
+    }
+    button:focus{
+      box-shadow: 0 0 0 0.2rem;
     }
   }
   .education:after{
