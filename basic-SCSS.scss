@@ -1,7 +1,24 @@
-// VARIABLES
+/*
+==================================================
+1. VARIABLES
+2. PRIMARY STYLES
+3. COMMONS FOR PAGE DESIGN
+4. HOME SECTION
+5. WORK EXPERIENCE SECTION
+6. EDUCATION SECTION
+==================================================
+
+
+-----------------------------------
+VARIABLES
+-----------------------------------*/
 $background-color: white;
 $color: #343A40; //STYLES
 $orange-color: #FFA804;
+
+/*-----------------------------------
+PRIMARY STYLES
+-----------------------------------*/
 
 html {
   font-size: 100%;
@@ -246,6 +263,49 @@ WORK-EXPERIENCE SECTION
     }
   }
 }
+
+
+
+/*-----------------------------------
+EDUCATION
+-----------------------------------*/
+
+.education-wrapper{
+  position: relative;
+  .education{
+    position: relative;
+    button{
+      color: white;
+      float: right;
+    }
+  }
+  .education:after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -58px;
+    width: 16px;
+    	height: 16px;
+      border-radius: 10px;
+      z-index: 1;
+    	box-shadow: 0 0 0 8px rgba(255,171,0, .4);
+      background: #FFAB00;
+  }
+}
+.education-wrapper:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: -51px;
+	width: 2px;
+  background: #ccc;
+}
+
+
+
+
+
 
 
 
