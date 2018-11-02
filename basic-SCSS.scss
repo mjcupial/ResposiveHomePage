@@ -1,6 +1,24 @@
-// VARIABLES
+/*
+==================================================
+1. VARIABLES
+2. PRIMARY STYLES
+3. COMMONS FOR PAGE DESIGN
+4. HOME SECTION
+5. WORK EXPERIENCE SECTION
+6. EDUCATION SECTION
+==================================================
+
+
+-----------------------------------
+VARIABLES
+-----------------------------------*/
 $background-color: white;
 $color: #343A40; //STYLES
+$orange-color: #FFA804;
+
+/*-----------------------------------
+PRIMARY STYLES
+-----------------------------------*/
 
 html {
   font-size: 100%;
@@ -109,7 +127,7 @@ button:active,
 button:focus,
 button:hover {
   text-decoration: none;
-  color: #FFA804;
+  color: $orange-color;
 }
 
 b {
@@ -138,10 +156,55 @@ button {
 /*-----------------------------------
 COMMONS FOR PAGE DESIGN
 -----------------------------------*/
+.section{
+  padding: 20px 0 70px;
+
+  .heading{
+    margin-bottom: 60px;
+  }
+  .heading:before{
+    content: '';
+    height: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    background: $orange-color;
+  }
+}
+.margin-b-50{
+  margin-bottom: 50px;
+}
+.margin-b-30{
+  margin-bottom: 30px;
+}
+.margin-t-10{
+  margin-top: 10px;
+}
+.margin-tb-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.font-lite-black{
+  color: #999;
+}
+.font-semi-white{
+  color: #DDD;
+}
 /*-----------------------------------
 INTRO SECTION
 -----------------------------------*/
-.home-section {
+.navbar{
+  padding: 0.8rem 1rem;
+  .navbar-nav{
+    .nav-link{
+      padding-right: 1.2rem;
+    }
+  }
+
+}
+
+.home-section{
   padding: 50px 0;
   position: relative;
   background-size: cover;
@@ -149,7 +212,7 @@ INTRO SECTION
   background-image: url("files/background.jpg");
 }
 
-.home-section:before {
+.home-section:before{
   content: '';
   z-index: -1;
   position: absolute;
@@ -159,18 +222,99 @@ INTRO SECTION
   right: 0;
   background: rgba(0,0,0, .2);
 }
-.home-section:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-	height: 150px; z-index: -1; background: #fff; }
+.home-section:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	height: 150px;
+  z-index: -1;
+  background: #FFF; }
+
+/*-----------------------------------
+WORK-EXPERIENCE SECTION
+-----------------------------------*/
+.experience-section{
+
+}
+.experience{
+  .list{
+    li{
+      display: block;
+      position: relative;
+      margin-bottom: 10px;
+      span{
+        position: relative;
+        padding-left: 20px;
+      }
+      span:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 10px;
+        width: 10px;
+        margin-top: -5px;
+        display: block;
+        border-radius: 10px;
+        border: 2px solid #555;
+      }
+    }
+  }
+}
+
+
+
+/*-----------------------------------
+EDUCATION
+-----------------------------------*/
+
+.education-wrapper{
+  position: relative;
+  .education{
+    position: relative;
+    button{
+      color: white;
+      float: right;
+    }
+  }
+  .education:after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -58px;
+    width: 16px;
+    	height: 16px;
+      border-radius: 10px;
+      z-index: 1;
+    	box-shadow: 0 0 0 8px rgba(255,171,0, .4);
+      background: #FFAB00;
+  }
+}
+.education-wrapper:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: -51px;
+	width: 2px;
+  background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------
 
 -----------------------------------*/
-
-
-
-
-
-
-
 
 .intro {
   padding: 0 20px;
