@@ -275,8 +275,8 @@ EDUCATION
   .education{
     position: relative;
     button{
+      margin-top: 20px;
       color: white;
-      float: right;
     }
   }
   .education:after{
@@ -300,6 +300,10 @@ EDUCATION
   left: -51px;
 	width: 2px;
   background: #ccc;
+}
+.hidden-edu{
+  margin-top: 30px;
+  background-color: silver;
 }
 
 
