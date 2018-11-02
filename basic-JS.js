@@ -44,9 +44,19 @@ $(document).ready(function() {
     }
   });
 
-  $('html, body').animate({
-      scrollTop: $("#education").offset().top
-  }, 1000);
+  // ============================================
+  //      smooth scrolling - navbar
+  // ============================================
+  function scrollNav() {
+    $('.nav a').click(function(){
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 100
+      }, 500);
+      return false;
+    });
+    $('.scrollTop a').scrollTop();
+  }
+  scrollNav();
 
 
 
