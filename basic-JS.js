@@ -8,7 +8,11 @@ $(document).ready(function() {
   // ======================================================
   //      short animations for specific elements
   // ======================================================
-  $(".profile-img").addClass("animated fadeInUp");
+
+  $("#linkedIn").addClass("animated rollIn");
+  $("#twitter").addClass("animated zoomInDown");
+  $("#flickr").addClass("animated fadeInUp");
+  $("#github").addClass("animated wobble");
 
 
   // ======================================================
@@ -47,16 +51,16 @@ $(document).ready(function() {
   // ============================================
   //      smooth scrolling - navbar
   // ============================================
-  function scrollNav() {
-    $('.nav a').click(function(){
+
+  $('.nav a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
       $('html, body').stop().animate({
-          scrollTop: $( $(this).attr('href') ).offset().top - 100
-      }, 500);
-      return false;
-    });
-    $('.scrollTop a').scrollTop();
-  }
-  scrollNav();
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
 
 
 
