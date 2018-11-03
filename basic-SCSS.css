@@ -263,6 +263,8 @@ EDUCATION
 
 .galery {
   text-align: center; }
+  .galery img {
+    height: 230px; }
 
 /*-----------------------------------
 
