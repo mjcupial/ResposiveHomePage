@@ -264,7 +264,11 @@ EDUCATION
 .galery {
   text-align: center; }
   .galery img {
-    height: 230px; }
+    height: 230px;
+    width: auto; }
+  .galery h6 {
+    margin-top: 10px;
+    margin-bottom: 20px; }
 
 /*-----------------------------------
 
