@@ -153,11 +153,16 @@ button {
   background: none;
   cursor: pointer;
 }
+.icon{
+  font-size: 1.1em;
+  display: inline-block;
+  line-height: inherit;
+}
 /*-----------------------------------------------------------------------------------------------------
 COMMONS FOR PAGE DESIGN
 -----------------------------------------------------------------------------------------------------*/
 .section{
-  padding: 20px 0 70px;
+    padding: 100px 0 50px;
 
   .heading{
     margin-bottom: 60px;
@@ -269,7 +274,10 @@ WORK-EXPERIENCE SECTION
 /*-----------------------------------------------------------------------------------------------------
 EDUCATION
 -----------------------------------------------------------------------------------------------------*/
-
+.education-section{
+  background: #28023D;
+  color: #fff;
+}
 .education-wrapper{
   position: relative;
   .education{
@@ -322,13 +330,39 @@ EDUCATION
     margin-top: 10px;
     margin-bottom: 20px;
   }
-
 }
 
 
-
-
-
+/*-----------------------------------------------------------------------------------------------------
+QUOTE
+-----------------------------------------------------------------------------------------------------*/
+.quoto-section{
+  padding: 80px 0;
+  position: relative;
+  background-size: cover;
+	z-index: 1;
+  background-image: url(files/quote.jpg);
+  color: #fff;
+  .icon{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background: #FFAB00;
+    color: #fff;
+  }
+}
+.quoto-section:before{
+  content:'';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+	right: 0;
+  background: rgba(0,0,0, .8);
+}
 
 
 
