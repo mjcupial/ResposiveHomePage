@@ -12,7 +12,7 @@ $(document).ready(function() {
   $("#linkedIn").addClass("animated rollIn");
   $("#twitter").addClass("animated zoomInDown");
   $("#flickr").addClass("animated fadeInUp");
-  $("#github").addClass("animated wobble");
+  $("#pinterest").addClass("animated wobble");
 
 
   // ======================================================
