@@ -1,3 +1,4 @@
+// RANDOM QUOTE
 function getQuote() {
   var url = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?";
   $.getJSON(url, function(data) {
@@ -10,3 +11,8 @@ function getQuote() {
     $("#author").html(author).hide().fadeIn(1000).delay(7800).fadeOut(1000);
   });
 };
+
+$(document).ready(function(){
+  getQuote();
+  setInterval("getQuote()", 10000);
+});

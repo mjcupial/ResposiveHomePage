@@ -288,7 +288,8 @@ QUOTE
   background-size: cover;
   z-index: 1;
   background-image: url(files/quote.jpg);
-  color: #fff; }
+  color: #fff;
+  min-height: 400px;}
   .quoto-section .icon {
     margin-bottom: 20px;
     height: 40px;
