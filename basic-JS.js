@@ -21,7 +21,7 @@ $(document).ready(function() {
   $('.sth').on('click', function() {
     swal({
       type: 'error',
-      title: 'Sorry',
+      title: 'Sorry,',
       text: 'but this section is not available yet',
     });
   });
