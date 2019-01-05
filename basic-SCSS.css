@@ -283,6 +283,7 @@ EDUCATION
 QUOTE
 -----------------------------------------------------------------------------------------------------*/
 .quoto-section {
+  min-height: 400px;
   padding: 80px 0;
   position: relative;
   background-size: cover;
@@ -388,3 +389,5 @@ footer {
   padding: 2% 0; }
   footer p {
     margin-bottom: 0; }
+
+/*# sourceMappingURL=basic-SCSS.css.map */
