@@ -31,7 +31,8 @@ $(document).ready(function() {
   $("#btn-status-1").click(function() {
     var elem = $("#btn-status-1").text();
     if (elem == "Read more") {
-      $("#btn-status-1").text("Read less");
+      // $("#btn-status-1").text("Read less");
+      $("#btn-status-1").hide();
     } else {
       $("#btn-status-1").text("Read more");
     }
@@ -42,7 +43,7 @@ $(document).ready(function() {
   $("#btn-status-2").click(function() {
     var elem = $("#btn-status-2").text();
     if (elem == "Read more") {
-      $("#btn-status-2").text("Read less");
+      $("#btn-status-2").hide();
     } else {
       $("#btn-status-2").text("Read more");
     }
